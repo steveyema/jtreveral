@@ -62,6 +62,8 @@
 		37E67F5115910A8800043822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4708514446391002EE1B0 /* UIKit.framework */; };
 		37E67F5215910AE200043822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4708914446392002EE1B0 /* CoreGraphics.framework */; };
 		37E67F5415910B6E00043822 /* JTRevealSidebar-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 37E67F5315910B6E00043822 /* JTRevealSidebar-Prefix.pch */; };
+		935D36A7178B395A006E5B25 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935D36A6178B395A006E5B25 /* Reveal.framework */; };
+		935D36A9178B3967006E5B25 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935D36A8178B3967006E5B25 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +158,8 @@
 		37E67F201591080200043822 /* libJTRevealSidebarV2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJTRevealSidebarV2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E67F37159109C500043822 /* libJTRevealSidebar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJTRevealSidebar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E67F5315910B6E00043822 /* JTRevealSidebar-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JTRevealSidebar-Prefix.pch"; sourceTree = "<group>"; };
+		935D36A6178B395A006E5B25 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		935D36A8178B3967006E5B25 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,11 +167,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935D36A9178B3967006E5B25 /* CFNetwork.framework in Frameworks */,
 				37E67F30159108A900043822 /* libJTRevealSidebarV2.a in Frameworks */,
 				1A0883FC14D6FEB500628D99 /* QuartzCore.framework in Frameworks */,
 				1A617E8D148FC4A6005EC465 /* UIKit.framework in Frameworks */,
 				1A617E8E148FC4A6005EC465 /* Foundation.framework in Frameworks */,
 				1A617E8F148FC4A6005EC465 /* CoreGraphics.framework in Frameworks */,
+				935D36A7178B395A006E5B25 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +292,7 @@
 		1AD4707614446391002EE1B0 = {
 			isa = PBXGroup;
 			children = (
+				935D36A8178B3967006E5B25 /* CFNetwork.framework */,
 				1AD470BD144463B4002EE1B0 /* JTRevealSidebar */,
 				1AD4708B14446392002EE1B0 /* JTRevealSidebarDemo */,
 				1AD470AC14446392002EE1B0 /* JTRevealSidebarDemoTests */,
@@ -313,6 +320,7 @@
 		1AD4708414446391002EE1B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				935D36A6178B395A006E5B25 /* Reveal.framework */,
 				1A0883FB14D6FEB500628D99 /* QuartzCore.framework */,
 				1AD4708514446391002EE1B0 /* UIKit.framework */,
 				1AD4708714446391002EE1B0 /* Foundation.framework */,
@@ -764,6 +772,10 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JTRevealSidebarDemoV2/JTRevealSidebarDemoV2-Prefix.pch";
 				INFOPLIST_FILE = "JTRevealSidebarDemoV2/JTRevealSidebarDemoV2-Info.plist";
@@ -778,6 +790,10 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JTRevealSidebarDemoV2/JTRevealSidebarDemoV2-Prefix.pch";
 				INFOPLIST_FILE = "JTRevealSidebarDemoV2/JTRevealSidebarDemoV2-Info.plist";
